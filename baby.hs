@@ -11,3 +11,5 @@ conanO'Brien = "it's a-me, Conan O'Brien!"
 
 -- リスト内表記
 listComprehension = [2*x|x <- [1..10]]
+
+crazyListComprehension = ["x not print!!" |x <- [1..10]]
