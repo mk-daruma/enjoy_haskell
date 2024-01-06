@@ -13,3 +13,8 @@ conanO'Brien = "it's a-me, Conan O'Brien!"
 listComprehension = [2*x|x <- [1..10]]
 
 crazyListComprehension = ["x not print!!" |x <- [1..10]]
+
+hogeFuga xs = [ if x < 10 then "Hoge" else "Fuga" | x <- xs, odd x ]
+
+length' xs = sum[1 | _ <- xs]
+removeNoUppercase st = [c | c <- st, c`elem` ['A'..'Z'] ]
